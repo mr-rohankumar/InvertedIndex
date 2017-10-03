@@ -2,13 +2,13 @@
 
 ![Icon](https://i.imgur.com/34x2Ahl.jpg)
 
-## Introduction:
+## Purpose:
 To explore one of the core elements of an information retrieval system, the inverted index. An inverted index is a mapping of words to their location in a set of files. Most modern search engines utilize some form of an inverted index to process user-submitted queries. In its most basic form, an inverted index is a simple hash table (hash map) which maps words in the files to some sort of file identifier, called a posting. This topic was chosen for its relevancy with hot companies like Google and Facebook.
 
-## Data Structure:
-The data structures primarily being used are hash maps and linked lists. The benefit of hash maps is O(1) time complexity for inserting and querying data, which is crucial for an inverted index to achieve rapid results. The benefit of linked lists is O(1) time complexity for appending data (i.e. inserting data to the end), sorting capabilities, and no wasted space. In this program, the hash map is a collection of words, a word is a collection of postings (using a linked list), and a posting is a collection of positions (also using a linked list). Currently, the program is relying on the Java Collection Framework (JCF). 
+## Implementation:
+The data structures primarily being used are hash maps and linked lists. The benefit of hash maps is O(1) time complexity for inserting and querying data, which is crucial for an inverted index to achieve rapid results. The benefit of linked lists is O(1) time complexity for appending data (i.e. inserting data to the end), sorting capabilities, and no wasted space. In this program, the hash map is a collection of words, a word is a collection of postings (using a linked list), and a posting is a collection of positions (also using a linked list). The program is relying on the Java Collection Framework (JCF). 
 
-## Input / Output:
+## Instructions:
 The inputs for this program are file names to be indexed and strings to be queried. Currently, these arguments are hardcoded in the main method. The output for this program will display the results of files inputted and queries evaluated. See attached source code for “Tester.java” and its output, “Output.txt”.
 
 ## Limitations:
